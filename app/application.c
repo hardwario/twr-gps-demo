@@ -8,6 +8,7 @@ int top;
 
 void screen_clear(void)
 {
+    bc_module_lcd_clear();
     bc_module_lcd_draw_string(2, 2, "BigClown GPS Module", true);
     bc_module_lcd_draw_line(0, 17, 127, 17, true);
 
@@ -77,7 +78,7 @@ void gps_module_event_handler(bc_module_gps_event_t event, void *event_param)
             screen_append(buffer);
 
             snprintf(buffer, sizeof(buffer),
-                "Lon: %03.5f", position.latitude);
+                "Lon: %03.5f", position.longitude);
 
             screen_append(buffer);
         }
@@ -129,6 +130,9 @@ void application_init(void)
 
     bc_module_lcd_init();
     bc_module_lcd_set_font(&bc_font_ubuntu_13);
+
+    screen_clear();
+    screen_update();
 
     if (!bc_module_gps_init())
     {
