@@ -2,7 +2,7 @@
 
 # Example for how to use HARDWARIO GPS Module
 
-[![Travis](https://img.shields.io/travis/bigclownprojects/bcf-gps-demo/master.svg)](https://travis-ci.org/bigclownprojects/bcf-gps-demo)
+[![build](https://github.com/hardwario/twr-gps-demo/actions/workflows/main.yml/badge.svg)](https://github.com/hardwario/twr-gps-demo/actions/workflows/main.yml)
 [![Release](https://img.shields.io/github/release/bigclownprojects/bcf-gps-demo.svg)](https://github.com/bigclownprojects/bcf-gps-demo/releases)
 [![License](https://img.shields.io/github/license/bigclownprojects/bcf-gps-demo.svg)](https://github.com/bigclownprojects/bcf-gps-demo/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/follow/hardwario_en.svg?style=social&label=Follow)](https://twitter.com/hardwario_en)
