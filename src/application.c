@@ -9,7 +9,7 @@ int top;
 void screen_clear(void)
 {
     twr_module_lcd_clear();
-    twr_module_lcd_draw_string(2, 2, "BigClown GPS Module", true);
+    twr_module_lcd_draw_string(2, 2, "HARDWARIO GPS Module", true);
     twr_module_lcd_draw_line(0, 17, 127, 17, true);
 
     top = 25;
